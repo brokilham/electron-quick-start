@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/section.css">
+    
+    <link rel="import" href="sections/page/page1.html">
+    <link rel="import" href="sections/page/page2.html">
+    <link rel="import" href="sections/page/page3.html">
+   
+    <title>Electron CRUD demo</title>
+  </head>
+  <body>    
+      <nav class="nav js-nav">
+          <header class="nav-header">
+              <h1 class="nav-title">Electron Multipage Demo</h1>
+              <svg class="nav-header-icon"><use xlink:href="assets/img/icons.svg#icon-electron"></use></svg>
+          </header>
+          <div class="nav-item u-category-windows">        
+              <button type="button" id="button-page1" data-section="page1" class="nav-button">Page 1</button>
+              <button type="button" id="button-page2" data-section="page2" class="nav-button">Page 2</button>
+              <button type="button" id="button-page3" data-section="page3" class="nav-button">Page 3</button>
+          </div>
+      </nav>
+      <main class="content js-content"></main>
+      <script>
+          require('./assets/imports')
+          require('./assets/nav')
+      </script>
+  </body>
+</html>
